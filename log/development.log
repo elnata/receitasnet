@@ -753,3 +753,29 @@ Migrating to CreateRecipes (20171019153339)
   [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "nome" = ?, "stuff" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["nome", "Lasanha"], ["stuff", "Frango"], ["updated_at", "2017-10-22 18:14:19.829668"], ["id", 1]]
   [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNewFildsToRecipe (20171022183759)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "recipes" ADD "Prepare_mode" text[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "recipes" ADD "cost" decimal[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171022183759"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."nome" = ? LIMIT ?[0m  [["nome", "Lasanha"], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."nome" = ? LIMIT ?[0m  [["nome", "Lasanha"], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."nome" = ? LIMIT ?[0m  [["nome", "file"], ["LIMIT", 1]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."nome" = ? LIMIT ?[0m  [["nome", "File"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "updated_at" = ?, "Prepare_mode" = ?, "cost" = ? WHERE "recipes"."id" = ?[0m  [["updated_at", "2017-10-22 18:49:55.839518"], ["Prepare_mode", "Modo de preparo"], ["cost", 90.0], ["id", 3]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."nome" = ? LIMIT ?[0m  [["nome", "Lasanha"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "updated_at" = ?, "Prepare_mode" = ?, "cost" = ? WHERE "recipes"."id" = ?[0m  [["updated_at", "2017-10-22 18:51:28.251915"], ["Prepare_mode", "Modo de preparo"], ["cost", 90.0], ["id", 1]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
