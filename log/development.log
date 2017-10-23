@@ -779,3 +779,126 @@ Migrating to AddNewFildsToRecipe (20171022183759)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "updated_at" = ?, "Prepare_mode" = ?, "cost" = ? WHERE "recipes"."id" = ?[0m  [["updated_at", "2017-10-22 18:51:28.251915"], ["Prepare_mode", "Modo de preparo"], ["cost", 90.0], ["id", 1]]
   [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 177.200.33.230 at 2017-10-23 16:18:25 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 925ms (Views: 908.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 16:30:26 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 187ms (Views: 184.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 16:58:02 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 208ms (Views: 205.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:01:14 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (159.5ms)
+Completed 200 OK in 216ms (Views: 211.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:01:35 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:01:55 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:02:44 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (154.4ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `formata_caloria' for #<#<Class:0x0000000295a0b8>:0x007f34f42421f8>):
+    14: 	</p>
+    15: 	<p>
+    16: 	
+    17: 			<%= formata_caloria (recipe) %>
+    18: 	
+    19: 	</p>
+    20: 	<table>
+  
+app/views/recipes/index.html.erb:17:in `block in _app_views_recipes_index_html_erb___4461346378884296815_69932705519080'
+app/views/recipes/index.html.erb:4:in `_app_views_recipes_index_html_erb___4461346378884296815_69932705519080'
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:04:08 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/workspace/app/helpers/recipes_helper.rb:4: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/recipes_helper.rb:4: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/recipes_controller.rb:1:in `<top (required)>'
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:04:29 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 57ms (Views: 49.0ms | ActiveRecord: 2.8ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("nome", "stuff", "calories", "created_at", "updated_at", "Prepare_mode", "cost") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Pudim"], ["stuff", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum consequat massa nec ornare. Fusce non vehicula enim. Curabitur ut placerat orci. Proin sem quam, rhoncus ut massa in, consectetur ornare diam. Praesent velit tellus, rhoncus accumsan orci id, sollicitudin lacinia leo. Vivamus mattis metus vel nunc tempor, a congue ligula volutpat. Sed in congue massa. Cras hendrerit finibus placerat. Suspendisse nisl ex, malesuada in sem varius, tempus posuere arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus dui vitae rhoncus. Mauris et dui massa. "], ["calories", 90], ["created_at", "2017-10-23 17:10:02.719813"], ["updated_at", "2017-10-23 17:10:02.719813"], ["Prepare_mode", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum consequat massa nec ornare. Fusce non vehicula enim. Curabitur ut placerat orci. Proin sem quam, rhoncus ut massa in, consectetur ornare diam. Praesent velit tellus, rhoncus accumsan orci id, sollicitudin lacinia leo. Vivamus mattis metus vel nunc tempor, a congue ligula volutpat. Sed in congue massa. Cras hendrerit finibus placerat. Suspendisse nisl ex, malesuada in sem varius, tempus posuere arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis cursus dui vitae rhoncus. Mauris et dui massa. "], ["cost", 90.0]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:11:52 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 68ms (Views: 58.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-23 17:14:29 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes"[0m
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 1.8ms)
+
+
