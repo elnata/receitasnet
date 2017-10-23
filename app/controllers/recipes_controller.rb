@@ -7,4 +7,14 @@ class RecipesController < ApplicationController
 	def show
 		@recipe = Recipe.find(params[:id])
 	end
+	def edit
+		@recipe = Recipe.find(params[:id])
+		
+	end
+	def update
+		@recipe=Recipe.find(params[:id])
+		recipe_params = params.require(:recipe).permit(:nome, :stuff, :calories, :Prepare_mode, :cost)
+		@recipe.update(recipe_params)
+		redirect_to @recipe
+	end
 end
