@@ -2443,3 +2443,332 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 184ms (Views: 175.3ms | ActiveRecord: 2.2ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFieldsToRecipe (20171024182107)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "recipes" ADD "kind" varchar[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "recipes" ADD "portion" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "recipes" ADD "duration" datetime[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "recipes" ADD "poster" varchar[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171024182107"]]
+  [1m[35m (18.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 177.200.33.230 at 2017-10-24 18:58:02 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 18:58:02.441888')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 18:58:02.441888') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (53.2ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `post' for #<Recipe:0x007f35051768a8>
+Did you mean?  poster):
+     6: 	<header>
+     7: 		
+     8: 		<h2><%= link_to recipe.nome , recipe_path(recipe)%></h2>
+     9: 		<%= imagem(recipe) %>
+    10: 		
+    11: 	</header>
+    12: 	<p>
+  
+app/helpers/recipes_helper.rb:10:in `imagem'
+app/views/recipes/index.html.erb:9:in `block in _app_views_recipes_index_html_erb___4461346378884296815_69932851039600'
+app/views/recipes/index.html.erb:4:in `_app_views_recipes_index_html_erb___4461346378884296815_69932851039600'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (19.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "stuff" text, "calories" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "Prepare_mode" text, "cost" decimal, "kind" varchar, "portion" varchar, "duration" datetime, "poster" varchar)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "stuff" text, "calories" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "Prepare_mode" text, "cost" decimal, "kind" varchar, "portion" varchar, "duration" datetime, "poster" varchar)[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (14.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171024182107)[0m
+  [1m[35m (15.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20171019153339),
+(20171022183759);
+
+[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-24 19:13:22.428849"], ["updated_at", "2017-10-24 19:13:22.428849"]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "recipes" ("nome", "stuff", "calories", "created_at", "updated_at", "Prepare_mode", "cost", "kind", "portion", "duration", "poster") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Pralinê de Castanha-do-Pará"], ["stuff", "\n  1  1 1/2 xícara (chá) de castanha-do-pará picada\n  2  1 xícara (chá) de açúcar cristal\n  3  1 colher (sopa) de manteiga\n  4  1 xícara (chá) de água\n  5  1/2 colher (chá) de bicarbonato de sódio"], ["calories", 110], ["created_at", "2017-10-24 19:13:22.492516"], ["updated_at", "2017-10-24 19:13:22.492516"], ["Prepare_mode", "\n    Numa panela em fogo médio, coloque 1 ½ xícara (chá) de castanha-do-pará picada, 1 xícara (chá) de açúcar cristal, 1 colher (sopa) de manteiga e mexa até o açúcar formar um caramelo.\n    Adicione 1 xícara (chá) de água, 1/2 colher (chá) de bicarbonato de sódio e vá mexendo sem parar até dissolver o caramelo. Quando começar a endurecer (+/- 5 minutos), apague o fogo e espalhe numa assadeira untada com manteiga. Espere esfriar e utilize em seguida."], ["cost", 40.0], ["kind", "Castanha"], ["portion", "8"], ["duration", "2016-05-06 00:35:00"], ["poster", ""]]
+  [1m[35m (21.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("nome", "stuff", "calories", "created_at", "updated_at", "Prepare_mode", "cost", "kind", "portion", "duration", "poster") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Moqueca de Casca de Banana "], ["stuff", "\n  \n\n    cascas de 10 bananas d´água maduras\n    1 1/2 litro de água\n    1 colher (sopa) de bicarbonato de sódio\n    2 cebolas picadas\n    1 maço de cheiro verde picado com o talo\n    azeite de dendê a gosto\n    1 cebola pequena cortada em rodelas\n    500ml de leite de coco\n    200ml de água\n    1 pimentão de cada cor sem semente cortado em rodelas (verde, amarelo e vermelho)\n    3 tomates sem sementes cortados em rodelas\n    coentro picado a gosto\n\n"], ["calories", 110], ["created_at", "2017-10-24 19:13:22.523565"], ["updated_at", "2017-10-24 19:13:22.523565"], ["Prepare_mode", "\n    \n    Lave as cascas de 10 bananas d´água maduras e coloque de molho por 15 minutos numa mistura de 1 1/2 litro de água com 1 colher (sopa) de bicarbonato de sódio. Escorra a água e corte as cascas em tirinhas finas.\n    Aqueça uma panela de barro e coloque 2 cebolas picada. Refogue por 3 minutos. Adicione as cascas de banana, o talo do cheiro verde picado, azeite de dendê a gosto e mexa. Tampe a panela e cozinhe por 5 minutos.\n    Junte 1 cebola pequena cortada em rodelas, 500 ml de leite de coco, 200 ml de água e misture. Distribua 1 pimentão de cada cor sem semente cortado em rodelas (verde, amarelo e vermelho), 3 tomates sem sementes cortados em rodelas, o cheiro verde e o coentro picados. Tampe a panela e cozinhe por mais 10 minutos. Apague o fogo e sirva.\n\n"], ["cost", 40.0], ["kind", "Banana"], ["portion", "8"], ["duration", "2016-05-06 00:35:00"], ["poster", ""]]
+  [1m[35m (24.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "recipes" ("nome", "stuff", "calories", "created_at", "updated_at", "Prepare_mode", "cost", "kind", "portion", "duration", "poster") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["nome", "Torta de Batata"], ["stuff", "\n    5 batatas grandes cozidas e amassadas\n    2 colheres (sopa) de margarina\n    Sal a gosto\n    1 fio de óleo\n    500 g de carne moída (ou frango)\n    5 dentes de alho amassados\n    2 sachês de molho de tomate (680 g)\n    1 colher (sopa) de sal\n    ½ lata de milho verde escorrido\n    ½ lata de ervilha escorrida\n    200g de cenoura sem casca cortada em cubinhos\n    1 colher (sopa) de salsinha picadinha\n    1 xícara (chá) de água\n    250g de queijo cremoso\n    200g de muçarela ralada no ralo grosso\n    200g de bacon cortado em cubinhos e frito\n    Cebolinha picada para decorar"], ["calories", 110], ["created_at", "2017-10-24 19:13:22.554270"], ["updated_at", "2017-10-24 19:13:22.554270"], ["Prepare_mode", "\n    Numa tigela coloque as batatas, a margarina, o sal e misture bem. Reserve.\n    Aqueça o óleo numa panela em fogo médio, coloque a carne moída, refogue por 2 minutos e adicione o alho. Quando a carne estiver soltinha, junte molho de tomate, sal, milho verde, ervilha, cenoura, salsinha picadinha e a água.\n    Tampe a panela e cozinhe por 10 minutos. Retire do fogo, transfira para uma tigela, deixe esfriar e misture o queijo cremoso.\n    Montagem: Forre o fundo de uma travessa com o purê de batata, distribua a carne refogada, salpique a muçarela e o bacon. Leve ao forno pré-aquecido a 200°C por 5 minutos ou até derreter o queijo. Retire do forno, decore com cebolinha picada e sirva com salada roxa (alface, cebola, beterraba e repolho).\n\n\n"], ["cost", 40.0], ["kind", "Batata"], ["portion", "8"], ["duration", "2016-05-06 00:35:00"], ["poster", ""]]
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/recipes" for 177.200.33.230 at 2017-10-24 19:13:32 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:13:32.251857')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:13:32.251857') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `post' for #<Recipe:0x007f3506465b58>
+Did you mean?  poster):
+     6: 	<header>
+     7: 		
+     8: 		<h2><%= link_to recipe.nome , recipe_path(recipe)%></h2>
+     9: 		<%= imagem(recipe) %>
+    10: 		
+    11: 	</header>
+    12: 	<p>
+  
+app/helpers/recipes_helper.rb:10:in `imagem'
+app/views/recipes/index.html.erb:9:in `block in _app_views_recipes_index_html_erb___4461346378884296815_69932857719920'
+app/views/recipes/index.html.erb:4:in `_app_views_recipes_index_html_erb___4461346378884296815_69932857719920'
+Started GET "/recipes" for 177.200.33.230 at 2017-10-24 19:18:19 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:18:19.485384')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:18:19.485384') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (51.9ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (The asset "sem-imagem.gif" is not present in the asset pipeline.):
+     6: 	<header>
+     7: 		
+     8: 		<h2><%= link_to recipe.nome , recipe_path(recipe)%></h2>
+     9: 		<%= imagem(recipe) %>
+    10: 		
+    11: 	</header>
+    12: 	<p>
+  
+app/helpers/recipes_helper.rb:11:in `imagem'
+app/views/recipes/index.html.erb:9:in `block in _app_views_recipes_index_html_erb___4461346378884296815_69932671135380'
+app/views/recipes/index.html.erb:4:in `_app_views_recipes_index_html_erb___4461346378884296815_69932671135380'
+Started GET "/recipes" for 177.200.33.230 at 2017-10-24 19:20:27 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:20:27.712508')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:20:27.712508') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (393.5ms)
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `formata_duration' for #<#<Class:0x00000004d45130>:0x00000004d2c658>
+Did you mean?  formata_caloria):
+    19: 	</p>
+    20: 	<p>
+    21: 	
+    22: 			<%= formata_duration.to_formatted_s(:time) %> min
+    23: 	
+    24: 	</p>
+    25: 	<table>
+  
+app/views/recipes/index.html.erb:22:in `block in _app_views_recipes_index_html_erb___4461346378884296815_40529120'
+app/views/recipes/index.html.erb:4:in `_app_views_recipes_index_html_erb___4461346378884296815_40529120'
+Started GET "/recipes" for 177.200.33.230 at 2017-10-24 19:22:24 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:22:25.087003')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:22:25.087003') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (103.4ms)
+Completed 200 OK in 553ms (Views: 537.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-24 19:30:38 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (476.3ms)
+Completed 500 Internal Server Error in 490ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `recipe' for #<#<Class:0x00000001ffed98>:0x007fb2f53a4c88>
+Did you mean?  @recipe):
+    1: <article>
+    2:     <header>
+    3:         <h1><%= @recipe.nome %></h1>
+    4:         <%= imagem(recipe) %>
+    5:     </header>
+    6:      <h2>Tipo</h2>
+    7:     <p>
+  
+app/views/recipes/show.html.erb:4:in `_app_views_recipes_show_html_erb___1177812556694565875_70203297575540'
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-24 19:32:09 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for 177.200.33.230 at 2017-10-24 19:32:15 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:32:15.034305')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:32:15.034305') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/new" for 177.200.33.230 at 2017-10-24 19:32:52 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (24.1ms)
+  Rendered recipes/new.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Kind' for #<Recipe:0x0000000484ab30>
+Did you mean?  kind
+               kind?
+               kind=):
+    10: </p>
+    11: <p>
+    12:     <%= f.label :Tipo %></br>
+    13:     <%= f.text_field :Kind %></br>
+    14: </p>
+    15: <p>
+    16:     <%= f.label :Calorias %></br>
+  
+app/views/recipes/_form.html.erb:13:in `block in _app_views_recipes__form_html_erb__868179492604847308_37523840'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__868179492604847308_37523840'
+app/views/recipes/new.html.erb:3:in `_app_views_recipes_new_html_erb__3359710702667080438_37869820'
+Started GET "/recipes/new" for 177.200.33.230 at 2017-10-24 19:33:29 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (22.1ms)
+  Rendered recipes/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-24 19:33:46 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:33:46.548911')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:33:46.548911') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-24 19:34:55 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/3/edit" for 177.200.33.230 at 2017-10-24 19:34:58 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.9ms)
+  Rendered recipes/edit.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `min' for "8":String):
+    22: </p>
+    23: <p>
+    24:     <%= f.label :Tempo_de_preparo %></br>
+    25:     <%= f.time_select :portion %></br>
+    26: </p>
+    27: <p>
+    28:     <%= f.label :Porções %></br>
+  
+app/views/recipes/_form.html.erb:25:in `block in _app_views_recipes__form_html_erb__868179492604847308_70203254616200'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__868179492604847308_70203254616200'
+app/views/recipes/edit.html.erb:3:in `_app_views_recipes_edit_html_erb___2963014691123172404_70203254559260'
+Started GET "/recipes/3/edit" for 177.200.33.230 at 2017-10-24 19:36:30 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (9.1ms)
+  Rendered recipes/edit.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `min' for "8":String):
+    22: </p>
+    23: <p>
+    24:     <%= f.label :Tempo_de_preparo %></br>
+    25:     <%= f.time_select :portion %></br>
+    26: </p>
+    27: <p>
+    28:     <%= f.label :Porções %></br>
+  
+app/views/recipes/_form.html.erb:25:in `block in _app_views_recipes__form_html_erb__868179492604847308_22795340'
+app/views/recipes/_form.html.erb:1:in `_app_views_recipes__form_html_erb__868179492604847308_22795340'
+app/views/recipes/edit.html.erb:3:in `_app_views_recipes_edit_html_erb___2963014691123172404_23032500'
+Started GET "/recipes/3/edit" for 177.200.33.230 at 2017-10-24 19:37:11 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/edit.html.erb within layouts/application
+  Rendered recipes/_form.html.erb (16.6ms)
+  Rendered recipes/edit.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-24 19:38:56 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-24 19:38:56.601660')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-24 19:38:56.601660') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.6ms)
+
+

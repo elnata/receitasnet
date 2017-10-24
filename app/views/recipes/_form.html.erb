@@ -9,6 +9,10 @@
     <%= f.text_area :stuff, cols: 20, rows:5 %></br>
 </p>
 <p>
+    <%= f.label :Tipo %></br>
+    <%= f.text_field :kind %></br>
+</p>
+<p>
     <%= f.label :Calorias %></br>
     <%= f.number_field :calories %></br>
 </p>
@@ -17,8 +21,20 @@
     <%= f.text_area :Prepare_mode, cols: 20, rows:5 %></br>
 </p>
 <p>
+    <%= f.label :Tempo_de_preparo %></br>
+    <%= f.time_select :duration %></br>
+</p>
+<p>
+    <%= f.label :Porções %></br>
+    <%= f.text_field :portion %></br>
+</p>
+<p>
     <%= f.label :Custo %></br>
     <%= f.number_field :cost %></br>
+</p>
+<p>
+    <%= f.label :Poster %></br>
+    <%= f.text_field :poster, placeholder: ".GIF, .JPEG ou .PNG" %></br>
 </p>
 <p>
     <%= f.submit %>

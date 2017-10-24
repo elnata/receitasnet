@@ -37,5 +37,5 @@ end
 
 private 
 	def recipe_params
-		params.require(:recipe).permit(:nome, :stuff, :calories, :Prepare_mode, :cost)
+		params.require(:recipe).permit(:nome, :stuff, :calories, :Prepare_mode, :cost, :kind, :portion, :duration, :poster)
 	end

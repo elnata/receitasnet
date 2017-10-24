@@ -6,7 +6,7 @@
 	<header>
 		
 		<h2><%= link_to recipe.nome , recipe_path(recipe)%></h2>
-		
+		<%= imagem(recipe) %>
 		
 	</header>
 	<p>
@@ -15,6 +15,11 @@
 	<p>
 	
 			<%= formata_caloria (recipe) %>
+	
+	</p>
+	<p>
+	
+			<%= recipe.duration.to_formatted_s(:time) %> min
 	
 	</p>
 	<table>
