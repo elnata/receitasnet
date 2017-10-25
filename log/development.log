@@ -2783,3 +2783,348 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 7796ms (Views: 7775.6ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/" for 177.200.33.230 at 2017-10-25 19:58:38 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 19:58:38.878147')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 19:58:38.878147') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (74.6ms)
+Completed 200 OK in 523ms (Views: 506.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:05:50 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:05:50.580106')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:05:50.580106') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (139.9ms)
+Completed 200 OK in 265ms (Views: 258.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:06:13 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:06:13.461137')[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:06:13.461137') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+... link_to image_tag ('logo.png', size:'30', alt:'receitanet')...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+...age_tag ('logo.png', size:'30', alt:'receitanet'), root_path...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected tLABEL
+...receitanet'), root_path, class: 'navbar-brand' );@output_buf...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+...t_path, class: 'navbar-brand' );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:22: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:06:46 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:06:46.307295')[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:06:46.307295') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+... link_to image_tag ('logo.png', size:'30', alt:'receitanet')...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+...age_tag ('logo.png', size:'30', alt:'receitanet'), root_path...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected tLABEL
+...receitanet'), root_path, class: 'navbar-brand' );@output_buf...
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+...t_path, class: 'navbar-brand' );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...'Receitasnet', root_path class: 'navbar-brand');@output_buff...
+...                               ^):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:22: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:22: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:22: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:08:08 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:08:08.348944')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:08:08.348944') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...'Receitasnet', root_path class: 'navbar-brand');@output_buff...
+...                               ^):
+  
+app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:08:25 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:08:25.475967')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:08:25.475967') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...'Receitasnet', root_path class:'navbar-brand');@output_buffe...
+...                               ^):
+  
+app/views/layouts/application.html.erb:23: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:09:03 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:03.167240')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:03.167240') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 239ms (Views: 234.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-25 20:09:41 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (131.4ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 177ms (Views: 35.9ms | ActiveRecord: 131.4ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:09:43 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:43.275162')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:43.275162') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 48ms (Views: 44.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-25 20:09:46 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:09:47 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:47.991027')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:09:47.991027') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:11:57 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:11:57.459869')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:11:57.459869') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (62.1ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Receitas):
+    27:     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    28:    
+    29:       <ul class="nav navbar-nav navbar-right">
+    30:         <li><%= link_to Receitas, root_path %></li>
+    31:         
+    32: 
+    33:           </ul>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb___1525190872001796241_69854307507760'
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:12:16 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:16.864957')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:16.864957') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:12:20 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:20.892807')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:20.892807') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/3" for 177.200.33.230 at 2017-10-25 20:12:22 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:12:24 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:24.217127')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:12:24.217127') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:15:18 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:15:18.019121')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:15:18.019121') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrp-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /home/ubuntu/workspace/app/assets/config
+  /home/ubuntu/workspace/app/assets/images
+  /home/ubuntu/workspace/app/assets/javascripts
+  /home/ubuntu/workspace/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/actionview-5.1.4/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.3.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/ubuntu/workspace/node_modules
+  /usr/local/rvm/gems/ruby-2.3.1/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.3.1/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/bootstrap-sass-3.3.7/assets/fonts
+  /usr/local/rvm/gems/ruby-2.3.1/gems/bootstrap-sass-3.3.7/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1525190872001796241_69854306553280'
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:16:01 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:16:01.933532')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:16:01.933532') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 331ms (Views: 327.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:33:55 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:33:55.701088')[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:33:55.701088') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 169ms (Views: 163.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:36:57 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:36:57.964888')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:36:57.964888') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 309ms (Views: 298.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:37:13 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:37:13.072787')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:37:13.072787') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 148ms (Views: 145.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:37:23 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:37:23.601931')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:37:23.601931') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:39:20 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:39:20.593165')[0m
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:39:20.593165') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (130.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 200ms (Views: 191.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:42:55 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (29.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:42:55.887340')[0m
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:42:55.887340') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 144ms (Views: 110.7ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/" for 177.200.33.230 at 2017-10-25 20:43:27 +0000
+Cannot render console from 177.200.33.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE (created_at <= '2017-10-25 20:43:27.133161')[0m
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE (created_at <= '2017-10-25 20:43:27.133161') ORDER BY created_at desc[0m
+  Rendered recipes/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 94ms (Views: 86.0ms | ActiveRecord: 1.1ms)
+
+
